@@ -1,12 +1,3 @@
-# slycer
-
-A library for easily moving around in Go byte slices. The goal is for it to be
-used as both a diagnostic tool for mapping out binary strucutres, and clean
-index management for tracking and stepping through a slice.
-
-## Example
-
-```go
 package main
 
 import (
@@ -52,19 +43,3 @@ func byteToInt(b []byte) int {
 	}
 	return int(b[0])
 }
-```
-
-
-
-```shell
-go run example.go
-Length: 49
-Not null bytes: []byte{0xff, 0x53, 0x4d, 0x42, 0x72}
-const (
-        slide = 4
-)
-const (
-        header = 0
-        reserved = 9
-)
-```
