@@ -1,7 +1,7 @@
 # slycer
 
 A library for easily moving around in Go byte slices. The goal is for it to be
-used as both a diagnostic tool for mapping out binary strucutres, and clean
+used as both a diagnostic tool for mapping out binary structures, and clean
 index management for tracking and stepping through a slice.
 
 ## Example
